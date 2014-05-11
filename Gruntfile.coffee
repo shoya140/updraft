@@ -4,7 +4,7 @@ module.exports = (grunt) ->
       install:
         options:
           targetDir: './assets'
-          layout: 'byType'
+          layout: 'byComponent'
           install: true
           verbose: false
           cleanTargetDir: false
@@ -13,12 +13,12 @@ module.exports = (grunt) ->
     sass:
       compile:
         src: 'assets/_scss/*.scss'
-        dest: 'assets/css/style.css'
+        dest: 'assets/custom/css/style.css'
 
     coffee:
       compile:
         src: 'assets/_coffee/*.coffee'
-        dest: 'assets/js/script.js'
+        dest: 'assets/custom/js/script.js'
 
     watch:
       scss:

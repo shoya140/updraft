@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no">
-    <meta name="keywords" content="Updraft">
-    <meta name="description" content="Updraft">
-    <meta property="og:title" content="Updraft">
+    <meta name="keywords" content="updraft">
+    <meta name="description" content="updraft">
+    <meta property="og:title" content="updraft">
     <meta property="og:url" content="">
-    <title>Updraft</title>
-    <link href="{{ static_url("css/bootstrap/bootstrap.min.css") }}" rel="stylesheet">
-    <link href="{{ static_url("css/style.css") }}" rel="stylesheet">
-    <script src="{{ static_url("js/jquery/jquery.min.js") }}"></script>
-    <script src="{{ static_url("js/bootstrap/bootstrap.min.js") }}"></script>
-    <script src="{{ static_url("js/backbone/backbone.js") }}"></script>
-    <script src="{{ static_url("js/underscore/underscore.js") }}"></script>
-    <script src="{{ static_url("js/script.js") }}"></script>
+    <title>updraft</title>
+    <link href="{{ static_url("bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
+    <link href="{{ static_url("custom/css/style.css") }}" rel="stylesheet">
+    <script src="{{ static_url("jquery/js/jquery.min.js") }}"></script>
+    <script src="{{ static_url("bootstrap/js/bootstrap.min.js") }}"></script>
+    <script src="{{ static_url("backbone/js/backbone.js") }}"></script>
+    <script src="{{ static_url("underscore/js/underscore.js") }}"></script>
+    <script src="{{ static_url("custom/js/script.js") }}"></script>
 </head>
 <body>
-<div class="header">
-    <div class="header-inner">
-        <h1>Updraft</h1>
-    </div>
-</div>
 <div class="container">
-    <div class="content">
-        <p>{{ text }}</p>
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">updraft</h3>
     </div>
-</div>
-<div class="footer">
-    <div class="footer-inner">
-        <p>{{ text }}</p>
+    <div class="jumbotron">
+        <h1>Hello, updraft</h1>
+        <p class="lead">The minimal scaffold for tornado App.</p>
+        <p><a class="btn btn-lg btn-success" href="#">Installed! <span class="glyphicon glyphicon-ok"></span></a></p>
     </div>
+    <div class="row content">
+        <div class="col-sm-4">
+            <h4><span class="glyphicon glyphicon-tasks"></span> Routing</h4>
+            <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+        </div>
+        <div class="col-sm-4">
+            <h4><span class="glyphicon glyphicon-transfer"></span> Web socket</h4>
+            <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+        </div>
+        <div class="col-sm-4">
+            <h4><span class="glyphicon glyphicon-list-alt"></span> Database</h4>
+            <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Developed by Shoya Ishimaru.</p>
+    </div>
+
 </div>
 </body>
 </html>

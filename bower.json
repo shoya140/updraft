@@ -22,7 +22,13 @@
   "exportsOverride": {
     "bootstrap": {
       "js": "dist/js/bootstrap.min.js",
-      "css": "dist/css/bootstrap.min.css"
+      "css": "dist/css/bootstrap.min.css",
+      "fonts": [
+        "dist/fonts/glyphicons-halflings-regular.eot",
+        "dist/fonts/glyphicons-halflings-regular.ttf",
+        "dist/fonts/glyphicons-halflings-regular.svg",
+        "dist/fonts/glyphicons-halflings-regular.woff"
+      ]
     },
     "backbone": {
       "js": "backbone.js"
