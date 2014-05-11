@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     bower:
       install:
         options:
-          targetDir: './assets'
+          targetDir: './app/assets'
           layout: 'byComponent'
           install: true
           verbose: false
@@ -12,25 +12,38 @@ module.exports = (grunt) ->
 
     sass:
       compile:
-        src: 'assets/_scss/*.scss'
-        dest: 'assets/custom/css/style.css'
+        src: 'app/assets/_scss/*.scss'
+        dest: 'app/assets/custom/css/style.css'
 
     coffee:
       compile:
-        src: 'assets/_coffee/*.coffee'
-        dest: 'assets/custom/js/script.js'
+        src: 'app/assets/_coffee/*.coffee'
+        dest: 'app/assets/custom/js/script.js'
 
     watch:
       scss:
-        files: 'assets/_scss/*.scss'
+        files: 'app/assets/_scss/*.scss'
         tasks: ['sass']
       coffee:
-        files: 'assets/_coffee/*.coffee'
+        files: 'app/assets/_coffee/*.coffee'
         tasks: ['coffee']
 
+    connect:
+      server:
+        options:
+          port: 8010
+          base: 'app'
+          open: true
+
+    open:
+      dev:
+        path: 'http://localhost:8010/'
+
   grunt.loadNpmTasks 'grunt-bower-task'
-  grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-contrib-connect'
 
   grunt.registerTask 'default',  ['sass', 'coffee', 'watch']
+  grunt.registerTask 'server',  ['sass', 'coffee', 'connect', 'watch']

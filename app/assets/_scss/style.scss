@@ -43,6 +43,9 @@ body{
   p + h4 {
     margin-top: 28px;
   }
+  h2{
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 
 pre{
@@ -85,15 +88,13 @@ pre{
 }
 
 
-// large screen
 @media screen and (min-width: 900px) {
   .container {
     max-width: 900px;
   }
 }
 
-// small screen
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
   .container{
     padding-left: 0px;
     padding-right: 0px;

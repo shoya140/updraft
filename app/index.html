@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="keywords" content="updraft">
+    <meta name="description" content="updraft">
+    <meta property="og:title" content="updraft">
+    <meta property="og:url" content="">
+    <title>updraft</title>
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/custom/css/style.css" rel="stylesheet">
+    <script src="/assets/jquery/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/backbone/js/backbone.js"></script>
+    <script src="/assets/underscore/js/underscore.js"></script>
+    <script src="/assets/custom/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#installation">Installation</a></li>
+        </ul>
+        <h3 class="text-muted">updraft</h3>
+    </div>
+    <div class="jumbotron">
+        <h1>Hello, updraft</h1>
+        <p class="lead">The minimal scaffold for web applications.</p>
+        <p><a class="btn btn-lg btn-inverse" href="https://github.com/Mrk1869/updraft"><span class="glyphicon glyphicon-save"></span> Download</a></p>
+    </div>
+    <div class="content">
+        <div id="home" class="row">
+            <div class="col-sm-4">
+                <h4><span class="glyphicon glyphicon-tasks"></span> Routing</h4>
+                <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+            </div>
+            <div class="col-sm-4">
+                <h4><span class="glyphicon glyphicon-transfer"></span> Web socket</h4>
+                <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+            </div>
+            <div class="col-sm-4">
+                <h4><span class="glyphicon glyphicon-list-alt"></span> Database</h4>
+                <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+            </div>
+        </div>
+        <div id="features">
+            <h2>Features</h2>
+            <p>Installing Twitter Bootstrap, jQuery, Backbone.js and Underscore.js</p>
+            <pre>assets
+├── backbone
+│   └── js
+│       └── backbone.js
+├── bootstrap
+│   ├── css
+│   │   └── bootstrap.min.css
+│   ├── fonts
+│   │   ├── glyphicons-halflings-regular.eot
+│   │   ├── glyphicons-halflings-regular.svg
+│   │   ├── glyphicons-halflings-regular.ttf
+│   │   └── glyphicons-halflings-regular.woff
+│   └── js
+│       └── bootstrap.min.js
+├── jquery
+│   └── js
+│       └── jquery.min.js
+└── underscore
+    └── js
+        └── underscore.js</pre>
+            <p>Auto-compiling coffee script and sass sources</p>
+            <pre>assets
+├── _coffee
+│   └── main.coffee
+├── _scss
+│   └── style.scss
+└── custom
+    ├── css
+    │   └── style.css
+    └── js
+        └── script.js</pre>
+            <p>Customized stylesheet</p>
+            <p><a class="btn btn-primary" href="" style="margin-bottom:5px"><span class="glyphicon glyphicon-plus"></span> primary</a>
+            <a class="btn btn-success" href="" style="margin-bottom:5px"><span class="glyphicon glyphicon-ok"></span> success</a>
+            <a class="btn btn-danger" href="" style="margin-bottom:5px"><span class="glyphicon glyphicon-remove"></span> danger</a>
+            <a class="btn btn-warning" href="" style="margin-bottom:5px"><span class="glyphicon glyphicon-off"></span> warning</a>
+        </div>
+        <div id="installation">
+            <h2>Installation</h2>
+            <p>0. Install require packages.</p>
+            <pre>$ npm install -g bower grunt-cli coffee-script
+$ gem install sass</pre>
+            <p>1. Git clone or <a href="https://github.com/Mrk1869/updraft/archive/master.zip">download</a> updraft.</p>
+            <pre>$ git clone git@github.com:Mrk1869/updraft.git</pre>
+            <p>2. Install packages for grunt.</p>
+            <pre>$ npm install</pre>
+            <p>3. Download libraries and copy them to assets/ directory.</p>
+            <pre>$ grunt bower:install</pre>
+            <p>4. Start auto-compiling sass and coffee script.</p>
+            <pre>$ grunt server</pre>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Developed by <a href="http://mrk1869.com/aboutme/">Shoya Ishimaru.</a></p>
+    </div>
+</div>
+</body>
+</html>
