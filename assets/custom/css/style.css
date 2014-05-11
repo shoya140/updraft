@@ -1,17 +1,19 @@
+body {
+  background-color: #f6f6f6; }
+
 .container {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-.header {
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 40px;
+  padding-bottom: 9px;
   border-bottom: 1px solid #e5e5e5; }
-  .header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px; }
 
 .footer {
-  padding-top: 19px;
+  padding-top: 20px;
   color: #777;
   border-top: 1px solid #e5e5e5;
   text-align: center; }
@@ -21,7 +23,8 @@
 
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5; }
+  background-color: #3b67a9;
+  color: #ffffff; }
   .jumbotron .btn {
     font-size: 21px;
     padding: 14px 24px; }
@@ -31,14 +34,49 @@
   .content p + h4 {
     margin-top: 28px; }
 
+pre {
+  background-color: #ffffff; }
+
+.nav-pills li a {
+  border: 1px solid;
+  border-color: transparent; }
+  .nav-pills li a:hover {
+    background-color: transparent;
+    border-color: #428bca; }
+
+.btn {
+  background-color: transparent;
+  border: 2px solid; }
+
+.btn-primary {
+  color: #285e8e; }
+
+.btn-danger {
+  color: #d43f3a; }
+
+.btn-success {
+  color: #398439; }
+
+.btn-warning {
+  color: #d58512; }
+
+.btn-inverse {
+  color: #ffffff;
+  border-color: #ffffff; }
+  .btn-inverse:hover {
+    background-color: #ffffff;
+    color: #285e8e; }
+
 @media screen and (min-width: 900px) {
   .container {
-    max-width: 900px; }
+    max-width: 900px; } }
+@media screen and (max-width: 600px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px; }
+    .container .jumbotron {
+      border-radius: 0px; }
 
-  .header {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 30px; }
-
-  .jumbotron {
-    border-bottom: 0; } }
+  .header, .content, .footer {
+    padding-left: 10px;
+    padding-right: 10px; } }

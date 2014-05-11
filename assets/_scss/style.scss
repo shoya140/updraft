@@ -1,20 +1,24 @@
+body{
+  background-color:#f6f6f6;
+}
+
 .container {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .header {
-  border-bottom: 1px solid #e5e5e5;
   h3 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     line-height: 40px;
-    padding-bottom: 19px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #e5e5e5;
   }
 }
 
 .footer {
-  padding-top: 19px;
+  padding-top: 20px;
   color: #777;
   border-top: 1px solid #e5e5e5;
   text-align: center;
@@ -26,7 +30,8 @@
 
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  background-color: #3b67a9;
+  color: #ffffff;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -40,23 +45,64 @@
   }
 }
 
+pre{
+  background-color: #ffffff;
+}
+
+.nav-pills li a{
+  border: 1px solid;
+  border-color: transparent;
+  &:hover{
+    background-color: transparent;
+    border-color: #428bca;
+  }
+}
+
+.btn{
+  background-color: transparent;
+  border: 2px solid;
+}
+.btn-primary{
+  color: #285e8e;
+}
+.btn-danger{
+  color: #d43f3a;
+}
+.btn-success{
+  color: #398439;
+}
+.btn-warning{
+  color: #d58512;
+}
+
+.btn-inverse{
+  color: #ffffff;
+  border-color: #ffffff;
+  &:hover{
+    background-color: #ffffff;
+    color: #285e8e;
+  }
+}
+
+
 // large screen
 @media screen and (min-width: 900px) {
   .container {
     max-width: 900px;
   }
-
-  .header{
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 30px;
-  }
-
-  .jumbotron {
-    border-bottom: 0;
-  }
 }
 
 // small screen
-@media screen and (max-width: 450px){
+@media screen and (max-width: 600px){
+  .container{
+    padding-left: 0px;
+    padding-right: 0px;
+    .jumbotron {
+      border-radius: 0px;
+    }
+  }
+  .header, .content, .footer{
+    padding-left:10px;
+    padding-right: 10px;
+  }
 }

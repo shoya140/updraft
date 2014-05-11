@@ -20,29 +20,62 @@
 <div class="container">
     <div class="header">
         <ul class="nav nav-pills pull-right">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/server/">Server</a></li>
-            <li><a href="/style/">Style</a></li>
+            <li class="active"><a href="#">Style</a></li>
         </ul>
         <h3 class="text-muted">updraft</h3>
     </div>
-    <div class="jumbotron">
-        <h1>{{ text }}</h1>
-        <p class="lead">The minimal scaffold for tornado App.</p>
-        <p><a class="btn btn-lg btn-inverse" href="https://github.com/Mrk1869/updraft"><span class="glyphicon glyphicon-save"></span> Download</a></p>
-    </div>
     <div class="row content">
-        <div class="col-sm-4">
+        <div class="col-md-6">
             <h4><span class="glyphicon glyphicon-tasks"></span> Routing</h4>
+            <a class="btn btn-primary" href="https://github.com/Mrk1869/updraft"><span class="glyphicon glyphicon-save"></span> primary</a>
+            <a class="btn btn-success" href="https://github.com/Mrk1869/updraft"><span class="glyphicon glyphicon-save"></span> success</a>
+            <a class="btn btn-danger" href="https://github.com/Mrk1869/updraft"><span class="glyphicon glyphicon-save"></span> danger</a>
+            <a class="btn btn-warning" href="https://github.com/Mrk1869/updraft"><span class="glyphicon glyphicon-save"></span> warning</a>
             <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+            <pre>class Application(tornado.web.Application):
+  def __init__(self):
+    handlers = [
+      (r"/", IndexHandler),
+    ]
+    .
+    .
+class IndexHandler(tornado.web.RequestHandler):
+  def get(self):
+    self.render('index.html', text="Hello World")</pre>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-6">
             <h4><span class="glyphicon glyphicon-transfer"></span> Web socket</h4>
             <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+            <pre>class Application(tornado.web.Application):
+  def __init__(self):
+    handlers = [
+      (r"/", IndexHandler),
+    ]
+    .
+    .
+class IndexHandler(tornado.web.RequestHandler):
+  def get(self):
+    self.render('index.html', text="Hello World")</pre>
         </div>
-        <div class="col-sm-4">
+
+        </div>
+        <div class="col-md-6">
             <h4><span class="glyphicon glyphicon-list-alt"></span> Database</h4>
             <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+            <pre>class Application(tornado.web.Application):
+  def __init__(self):
+    handlers = [
+      (r"/", IndexHandler),
+    ]
+    .
+    .
+class IndexHandler(tornado.web.RequestHandler):
+  def get(self):
+    self.render('index.html', text="Hello World")</pre>
+        </div>
+
         </div>
     </div>
     <div class="footer">

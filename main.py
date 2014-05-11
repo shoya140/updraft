@@ -12,6 +12,8 @@ class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
                 (r"/", IndexHandler),
+                (r"/server/", ServerHandler),
+                (r"/style/", StyleHandler),
                 ]
         settings = dict(
                 template_path=os.path.join(os.path.dirname(__file__), "templates"),
@@ -22,7 +24,15 @@ class Application(tornado.web.Application):
 
 class IndexHandler(tornado.web.RequestHandler):
     def get(self):
-        self.render('index.html', text="Hello World")
+        self.render('index.html', text="Hello, updraft")
+
+class ServerHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('server.html')
+
+class StyleHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('style.html')
 
 if __name__ == "__main__":
     tornado.options.parse_command_line()
