@@ -35,10 +35,6 @@ module.exports = (grunt) ->
           base: 'app'
           open: true
 
-    open:
-      dev:
-        path: 'http://localhost:8010/'
-
   grunt.loadNpmTasks 'grunt-bower-task'
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
