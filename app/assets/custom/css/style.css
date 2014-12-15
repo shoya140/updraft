@@ -24,7 +24,8 @@ body {
 .jumbotron {
   text-align: center;
   background-color: #3b67a9;
-  color: #ffffff; }
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) inset; }
   .jumbotron .btn {
     font-size: 21px;
     padding: 14px 24px; }
