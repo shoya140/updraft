@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     bower:
       install:
         options:
-          targetDir: './assets'
+          targetDir: './assets/_dist'
           layout: 'byComponent'
           install: true
           verbose: false
@@ -12,20 +12,20 @@ module.exports = (grunt) ->
 
     sass:
       compile:
-        src: 'assets/_scss/*.scss'
-        dest: 'assets/custom/css/style.css'
+        src: 'assets/scss/*.scss'
+        dest: 'assets/_dist/custom/css/style.css'
 
     coffee:
       compile:
-        src: 'assets/_coffee/*.coffee'
-        dest: 'assets/custom/js/script.js'
+        src: 'assets/coffee/*.coffee'
+        dest: 'assets/_dist/custom/js/script.js'
 
     watch:
       scss:
-        files: 'assets/_scss/*.scss'
+        files: 'assets/scss/*.scss'
         tasks: ['sass']
       coffee:
-        files: 'assets/_coffee/*.coffee'
+        files: 'assets/coffee/*.coffee'
         tasks: ['coffee']
 
   grunt.loadNpmTasks 'grunt-bower-task'

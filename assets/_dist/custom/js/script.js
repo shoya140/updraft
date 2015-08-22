@@ -1,4 +1,4 @@
 (function() {
-  console.log('hello');
+  console.log("hello");
 
 }).call(this);
