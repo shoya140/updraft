@@ -14,9 +14,12 @@ The scaffold for my web applications
 * grunt
 * coffee script
 * sass
-* tornado (option)
 
 ## Installation
+
+    # Install requirements (if necessary)
+    $ npm install -g bower grunt-cli coffee-script
+    $ gem install sass
 
     # Install packages for grunt.
     $ npm install
