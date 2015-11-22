@@ -8,13 +8,13 @@
     <meta property="og:title" content="updraft">
     <meta property="og:url" content="">
     <title>updraft</title>
-    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/custom/css/style.css" rel="stylesheet">
-    <script src="/assets/jquery/js/jquery.min.js"></script>
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/assets/backbone/js/backbone.js"></script>
-    <script src="/assets/underscore/js/underscore.js"></script>
-    <script src="/assets/custom/js/script.js"></script>
+    <link href="/assets/_dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/_dist/custom/css/style.css" rel="stylesheet">
+    <script src="/assets/_dist/jquery/js/jquery.min.js"></script>
+    <script src="/assets/_dist/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/_dist/backbone/js/backbone.js"></script>
+    <script src="/assets/_dist/underscore/js/underscore.js"></script>
+    <script src="/assets/_dist/custom/js/script.js"></script>
 </head>
 <body>
 <div class="container">
@@ -49,36 +49,36 @@
             <h2>Features</h2>
             <p>Installing Twitter Bootstrap, jQuery, Backbone.js and Underscore.js</p>
             <pre>assets
-├── backbone
-│   └── js
-│       └── backbone.js
-├── bootstrap
-│   ├── css
-│   │   └── bootstrap.min.css
-│   ├── fonts
-│   │   ├── glyphicons-halflings-regular.eot
-│   │   ├── glyphicons-halflings-regular.svg
-│   │   ├── glyphicons-halflings-regular.ttf
-│   │   └── glyphicons-halflings-regular.woff
-│   └── js
-│       └── bootstrap.min.js
-├── jquery
-│   └── js
-│       └── jquery.min.js
-└── underscore
-    └── js
-        └── underscore.js</pre>
-            <p>Auto-compiling coffee script and sass sources</p>
-            <pre>assets
-├── _coffee
+├── _dist
+│   ├── backbone
+│   │   └── js
+│   │       └── backbone.js
+│   ├── bootstrap
+│   │   ├── css
+│   │   │   └── bootstrap.min.css
+│   │   ├── fonts
+│   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   └── glyphicons-halflings-regular.woff
+│   │   └── js
+│   │       └── bootstrap.min.js
+│   ├── custom
+│   │   ├── css
+│   │   │   ├── style.css
+│   │   │   └── style.css.map
+│   │   └── js
+│   │       └── script.js
+│   ├── jquery
+│   │   └── js
+│   │       └── jquery.min.js
+│   └── underscore
+│       └── js
+│           └── underscore.js
+├── coffee
 │   └── main.coffee
-├── _scss
-│   └── style.scss
-└── custom
-    ├── css
-    │   └── style.css
-    └── js
-        └── script.js</pre>
+└── scss
+    └── style.scss</pre>
             <p>Customized stylesheet based on Twitter Bootstrap</p>
             <p><a class="btn btn-primary" href="" style="margin-bottom:5px"><span class="glyphicon glyphicon-plus"></span> primary</a>
             <a class="btn btn-success" href="" style="margin-bottom:5px"><span class="glyphicon glyphicon-ok"></span> success</a>
@@ -89,15 +89,14 @@
             <h2>Installation</h2>
             <h3><span class="glyphicon glyphicon-chevron-right" style="font-size:90%;"></span> Require</h3>
             <p>Install require packages.</p>
-            <pre>$ npm install -g bower grunt-cli coffee-script
+            <pre>
+$ npm install -g bower grunt-cli coffee-script
 $ gem install sass</pre>
-            <p>Git clone or <a href="https://github.com/Mrk1869/updraft/archive/master.zip">download</a> updraft.</p>
-            <pre>$ git clone git@github.com:shoya140/updraft.git</pre>
             <h3><span class="glyphicon glyphicon-chevron-right" style="font-size:90%;"></span> How to start</h3>
             <p>1. Install packages for grunt.</p>
             <pre>$ npm install</pre>
-            <p>2. Download libraries and copy them to assets/ directory.</p>
-            <pre>$ grunt bower:install</pre>
+            <p>2. Download libraries by using bower and copy them to assets/ directory.</p>
+            <pre>$ grunt init</pre>
             <p>3. Start auto-compiling sass and coffee script.</p>
             <pre>$ grunt server</pre>
         </div>

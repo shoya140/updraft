@@ -25,7 +25,7 @@ The scaffold for my web applications
     $ npm install
 
     # Download libraries and copy them to assets/ directory.
-    $ grunt bower:install
+    $ grunt init
 
     # Start auto-compiling sass and coffee script.
-    $ grunt
+    $ grunt server

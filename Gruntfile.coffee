@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     bower:
       install:
         options:
-          targetDir: './app/assets'
+          targetDir: './app/assets/_dist'
           layout: 'byComponent'
           install: true
           verbose: false
@@ -12,20 +12,20 @@ module.exports = (grunt) ->
 
     sass:
       compile:
-        src: 'app/assets/_scss/*.scss'
-        dest: 'app/assets/custom/css/style.css'
+        src: 'app/assets/scss/*.scss'
+        dest: 'app/assets/_dist/custom/css/style.css'
 
     coffee:
       compile:
-        src: 'app/assets/_coffee/*.coffee'
-        dest: 'app/assets/custom/js/script.js'
+        src: 'app/assets/coffee/*.coffee'
+        dest: 'app/assets/_dist/custom/js/script.js'
 
     watch:
       scss:
-        files: 'app/assets/_scss/*.scss'
+        files: 'app/assets/scss/*.scss'
         tasks: ['sass']
       coffee:
-        files: 'app/assets/_coffee/*.coffee'
+        files: 'app/assets/coffee/*.coffee'
         tasks: ['coffee']
 
     connect:
@@ -41,5 +41,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-connect'
 
+  grunt.registerTask 'init', ['bower:install']
   grunt.registerTask 'default',  ['sass', 'coffee', 'watch']
   grunt.registerTask 'server',  ['sass', 'coffee', 'connect', 'watch']
